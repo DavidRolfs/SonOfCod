@@ -1,21 +1,36 @@
-﻿
-<p>List of all users</p>
+﻿@model IEnumerable<SonOfCod.Models.Subscriber>
+@using System.Security.Claims
 
-@model IEnumerable<SonOfCod.Models.Subscriber>
 
-<h2>Here is the list of all Subscribers, @User.Identity.Name</h2>
-<hr />
-
-@if (Model.Any())
+@if (User.Identity.IsAuthenticated)
 {
-    <ul>
-        @foreach (var listItem in Model)
-        {
-            <li>@Html.DisplayFor(modelItem => listItem.Name), @Html.DisplayFor(modelItem => listItem.Email)</li>
-        }
-    </ul>
+
+    @if (Model.Any())
+    {
+        <h2>Here is the list of all Subscribers, @User.Identity.Name</h2>
+        <hr />
+
+        <ul>
+            @foreach (var listItem in Model)
+            {
+                <li>@Html.DisplayFor(modelItem => listItem.Name), @Html.DisplayFor(modelItem => listItem.Email)</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No one has Subscribed yet!</p>
+    }
+        <p>Hello @User.Identity.Name!</p>
+        @using (Html.BeginForm("LogOff", "Account"))
+    {
+            <input type="submit" class="btn btn-default" value="Log out" />
+    }
+    <p>@Html.ActionLink("Home", "Index", "")</p>
 }
 else
 {
-    <p>No tasks have been added yet!</p>
+    <h3>You must log in to view subscibers </h3>
+    <p>@Html.ActionLink("Register", "Register")</p>
+    <p>@Html.ActionLink("Log in", "Login")</p>
 }
