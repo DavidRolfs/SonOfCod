@@ -1,7 +1,10 @@
 ﻿@model IEnumerable<SonOfCod.Models.Subscriber>
 @using System.Security.Claims
 
-
+@{
+    ViewData["Title"] = "Son of Cod";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 @if (User.Identity.IsAuthenticated)
 {
 
