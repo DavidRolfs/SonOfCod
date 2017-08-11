@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using SonOfCod.Models;
 using System.Threading.Tasks;
 using SonOfCod.ViewModels;
+using System.Linq;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -63,6 +64,11 @@ namespace SonOfCod.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Index()
+        {
+            return View(_db.Subscribers.ToList());
         }
     }
 }

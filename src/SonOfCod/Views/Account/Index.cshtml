@@ -1,0 +1,21 @@
+﻿
+<p>List of all users</p>
+
+@model IEnumerable<SonOfCod.Models.Subscriber>
+
+<h2>Here is the list of all Subscribers, @User.Identity.Name</h2>
+<hr />
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var listItem in Model)
+        {
+            <li>@Html.DisplayFor(modelItem => listItem.Name), @Html.DisplayFor(modelItem => listItem.Email)</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No tasks have been added yet!</p>
+}
