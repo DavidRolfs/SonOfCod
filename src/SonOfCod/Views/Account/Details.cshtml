@@ -1,0 +1,16 @@
+﻿
+@model SonOfCod.Models.Subscriber
+@if (User.Identity.IsAuthenticated)
+{
+<h2>Details</h2>
+<hr />
+<p>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</p>
+<p>@Html.DisplayNameFor(model => model.Email): @Html.DisplayFor(model => model.Email)</p>
+<p>@Html.DisplayNameFor(model => model.ZipCode): @Html.DisplayFor(model => model.ZipCode)</p>
+<p>@Html.DisplayNameFor(model => model.Birthday): @Html.DisplayFor(model => model.Birthday)</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>
+}
+else
+{
+    <p>please log in to view the details</p>
+}

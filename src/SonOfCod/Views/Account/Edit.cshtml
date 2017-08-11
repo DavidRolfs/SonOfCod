@@ -1,0 +1,30 @@
+﻿@model SonOfCod.Models.Subscriber
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Edit</h2>
+    <hr />
+    <h4>Edit this task: @Html.DisplayFor(model => model.Name)</h4>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.Id)
+
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
+        @Html.LabelFor(model => model.ZipCode)
+        @Html.EditorFor(model => model.ZipCode)
+        @Html.LabelFor(model => model.Birthday)
+        @Html.EditorFor(model => model.Birthday)
+
+        <input type="submit" value="Save" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+
+}
+else
+{
+    <p>please log in to edit</p>
+}

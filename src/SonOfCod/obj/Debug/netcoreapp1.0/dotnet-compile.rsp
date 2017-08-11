@@ -1,5 +1,5 @@
---temp-output:c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
---out:c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
+--temp-output:C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
+--out:C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -200,23 +200,23 @@
 --reference:C:\Users\david\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\david\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\david\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\MarketingController.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\SubscriberController.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811153140_Initial.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811153140_Initial.Designer.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811164204_SubscriberModel.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811164204_SubscriberModel.Designer.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203106_Email.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203106_Email.Designer.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203237_Email2.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203237_Email2.Designer.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\ApplicationDbContextModelSnapshot.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationDbContext.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Subscriber.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
-c:\Users\david\documents\visual studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\MarketingController.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\SubscriberController.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811153140_Initial.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811153140_Initial.Designer.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811164204_SubscriberModel.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811164204_SubscriberModel.Designer.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203106_Email.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203106_Email.Designer.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203237_Email2.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170811203237_Email2.Designer.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationDbContext.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Subscriber.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
+C:\Users\david\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs

@@ -4,6 +4,7 @@ using SonOfCod.Models;
 using System.Threading.Tasks;
 using SonOfCod.ViewModels;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -69,6 +70,38 @@ namespace SonOfCod.Controllers
         public IActionResult Index()
         {
             return View(_db.Subscribers.ToList());
+        }
+        public IActionResult Details(int id)
+        {
+            var thisPerson = _db.Subscribers.FirstOrDefault(subscribers => subscribers.Id == id);
+            return View(thisPerson);
+        }
+        public IActionResult Edit(int id)
+        {
+            var thisPerson = _db.Subscribers.FirstOrDefault(subscribers => subscribers.Id == id);
+            return View(thisPerson);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Subscriber subscriber)
+        {
+            _db.Entry(subscriber).State = EntityState.Modified;
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Delete(int id)
+        {
+            var thisPerson = _db.Subscribers.FirstOrDefault(subscribers => subscribers.Id == id);
+            return View(thisPerson);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var thisPerson = _db.Subscribers.FirstOrDefault(subscribers => subscribers.Id == id);
+            _db.Subscribers.Remove(thisPerson);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

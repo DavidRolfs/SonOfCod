@@ -13,7 +13,7 @@
         <ul>
             @foreach (var listItem in Model)
             {
-                <li>@Html.DisplayFor(modelItem => listItem.Name), @Html.DisplayFor(modelItem => listItem.Email)</li>
+                <li>@Html.DisplayFor(modelItem => listItem.Name), @Html.DisplayFor(modelItem => listItem.Email)  | @Html.ActionLink("Details", "Details", new { id = listItem.Id }) | @Html.ActionLink("Edit", "Edit", new { id = listItem.Id }) | @Html.ActionLink("Delete", "Delete", new { id = listItem.Id })</li>
             }
         </ul>
     }
