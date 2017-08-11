@@ -1,0 +1,22 @@
+﻿@model SonOfCod.Models.Subscriber
+
+
+<h2>Join our newsletter</h2>
+<hr />
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+    @Html.LabelFor(model => model.ZipCode)
+    @Html.EditorFor(model => model.ZipCode)
+    @Html.LabelFor(model => model.Birthday)
+    @Html.EditorFor(model => model.Birthday)
+    @Html.LabelFor(model => model.Email)
+    @Html.EditorFor(model => model.Email)
+    <input type="submit" value="Create" />
+}
+
+
+@Html.ActionLink("Back to Homepage", "Index", "")
+
+@Html.ActionLink("Sign up here", "Create", "Subscriber")
