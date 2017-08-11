@@ -20,10 +20,7 @@ namespace SonOfCod.Controllers
             _signInManager = signInManager;
             _db = db;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+
         public IActionResult Register()
         {
             return View();
