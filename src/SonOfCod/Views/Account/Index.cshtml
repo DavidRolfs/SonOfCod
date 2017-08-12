@@ -24,12 +24,10 @@
     {
         <p>No one has Subscribed yet!</p>
     }
-        <p>Hello @User.Identity.Name!</p>
         @using (Html.BeginForm("LogOff", "Account"))
     {
             <input type="submit" class="btn btn-default" value="Log out" />
     }
-    <p>@Html.ActionLink("Home", "Index", "")</p>
 }
 else
 {
